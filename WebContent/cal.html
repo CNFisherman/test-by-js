@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>电路试题库管理系统</title>
+    </head>
+    <body style="background-color:#537ba7">
+        <form align="center" action="/add/cal.php" method="post" enctype="multipart/form-data">
+            <!-- 此表单获取的内容将提交给choice.php处理，且请求为post -->
+                <p style="text-align:left;color:white;font-size:16px;">
+                    内&nbsp;容:</br><textarea rows="5" cols="20" style="width:600px; height:90px;" name="info" value="" max="100"></textarea></p>
+                <p style="text-align:left;color:white;font-size:16px;">
+                    答案:</br><textarea rows="5" cols="20" style="width:600px; height:90px;" name="answ" value="" max="100"></textarea></p>
+                <p style="text-align:left;color:white;font-size:16px;">
+                    图片:</br><input type="file" id="input" name="pic">
+                <p style="text-align:left;color:white;font-size:16px;">
+                    分值:</br><input type="text" value="" name="score" >
+                <p style="text-align:left;color:white;font-size:16px;">
+                    难度:</br><select name="level">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select></p>
+                <p style="text-align:left;color:white;font-size:16px;">
+                     章节:</br><select multiple="multiple" name="chapter">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    </select></p>
+                <p style="display:block;line-height:50px;text-align:left;">
+                    <input type="submit" name="submit" value="提交"></p>
+            </form>
+    </body>
+</html>
